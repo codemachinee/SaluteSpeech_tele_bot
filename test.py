@@ -14,7 +14,6 @@ async def chek_message(v):
 
 
 async def save_audio(bot, message):
-    await bot.send_message(message.chat.id, f'есть контакт')
     file_id = message.voice.file_id
     file = await bot.get_file(file_id)
     file_path = file.file_path
